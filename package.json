@@ -1,11 +1,11 @@
 {
-  "name": "jsonresume-theme-boilerplate",
-  "version": "0.1.1",
-  "description": "Boilerplate theme for JSON Resume",
-  "author": "Mattias Erming",
+  "name": "jsonresume-theme-hopian",
+  "version": "0.0.1",
+  "description": "JSON Resume - Hopian",
+  "author": "Bruce Park",
   "repository": {
     "type": "git",
-    "url": "https://github.com/erming/jsonresume-theme-boilerplate"
+    "url": "https://github.com/treble37/jsonresume-theme-hopian"
   },
   "license": "MIT",
   "dependencies": {

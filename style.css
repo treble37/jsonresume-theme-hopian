@@ -52,3 +52,6 @@ blockquote {
 	width: 50%;
 }
 
+#bio_sketch {
+	float: left;
+}

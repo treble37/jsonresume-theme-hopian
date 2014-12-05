@@ -67,3 +67,14 @@ blockquote {
 h1, h2, h3, h4, h5, h6 {
 	color: #AA6C39;
 }
+
+a:link, a:visited  { 
+  color: #162955;
+  text-decoration: none;
+}
+
+a:hover, a:ative {
+  color: #7887AB;
+  text-decoration: underline;
+}
+

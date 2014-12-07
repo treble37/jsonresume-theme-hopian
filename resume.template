@@ -380,7 +380,7 @@
 			{{#if keywords.length}}
 			<ul class="keywords">
 				{{#each keywords}}
-				<li>{{.}}</li>
+				<li class="label-keyword">{{.}}</li>
 				{{/each}}
 			</ul>
 			{{/if}}

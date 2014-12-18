@@ -49,8 +49,11 @@
 
 	{{#resume.basics}}
 	<h1>{{name}}</h1>
+  <div class="icon">
+    <i class="fa fa-mobile"></i>
+  </div>
 	<h2>{{label}}</h2>
-	<section id="basics"><i class="fa fa-mobile"></i>
+	<section id="basics">
 		<div class="contact">
 		{{#if website}}
 		<div class="website">

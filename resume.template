@@ -41,44 +41,6 @@
 		</div>
 		{{/if}}
 	</div>
-	</section>
-	{{/resume.basics}}
-	</div>
-
-	<div id="resume">
-
-	{{#resume.basics}}
-	<h1>{{name}}</h1>
-  <div class="icon">
-    <i class="fa fa-mobile"></i>
-  </div>
-	<h2>{{label}}</h2>
-	<section id="basics">
-		<div class="contact">
-		{{#if website}}
-		<div class="website">
-			<strong>Website</strong>
-			{{website}}
-		</div>
-		{{/if}}
-		{{#if email}}
-		<div class="email">
-			<strong>Email</strong>
-			{{email}}
-		</div>
-		{{/if}}
-		{{#if phone}}
-		<div class="phone">
-			<strong>Phone</strong>
-			{{phone}}
-		</div>
-		{{/if}}
-		</div>
-		{{#if summary}}
-		<div class="summary">
-			<p>{{summary}}</p>
-		</div>
-		{{/if}}
 		{{#location}}
     <h3>Location</h3>
 		<section id="location">
@@ -139,11 +101,52 @@
 		</section>
 		{{/if}}
 	</section>
+	</section>
+	{{/resume.basics}}
+	</div>
+
+	<div id="resume">
+
+	{{#resume.basics}}
+	<h1>{{name}}</h1>
+  <div class="icon">
+    <i class="fa fa-mobile"></i>
+    <span class="resume-heading">{{label}}</span>
+  </div>
+	<section id="basics">
+		<div class="contact">
+		{{#if website}}
+		<div class="website">
+			<strong>Website</strong>
+			{{website}}
+		</div>
+		{{/if}}
+		{{#if email}}
+		<div class="email">
+			<strong>Email</strong>
+			{{email}}
+		</div>
+		{{/if}}
+		{{#if phone}}
+		<div class="phone">
+			<strong>Phone</strong>
+			{{phone}}
+		</div>
+		{{/if}}
+		</div>
+		{{#if summary}}
+		<div class="summary">
+			<p>{{summary}}</p>
+		</div>
+		{{/if}}
 	{{/resume.basics}}
 
 	{{#if resume.work.length}}
 	<section id="work">
-    <h2>Work</h2><i class="fa fa-briefcase"></i>
+    <div class="icon">
+      <i class="fa fa-briefcase"></i>
+      <span class="resume-heading">Work</span>
+    </div>
 		{{#each resume.work}}
 		<div class="item">
 			{{#if company}}
@@ -196,7 +199,10 @@
 
 	{{#if resume.volunteer.length}}
 	<section id="volunteer">
-    <h2>Volunteer</h2><i class="fa fa-child"></i>
+    <div class="icon">
+      <i class="fa fa-child"></i>
+      <span class="resume-heading">Volunteer</span>
+    </div>
 		{{#each resume.volunteer}}
 		<div class="item">
 			{{#if organization}}
@@ -249,7 +255,10 @@
 	
 	{{#if resume.education.length}}
 	<section id="education">
-    <h2>Education</h2><i class="fa fa-university"></i>
+    <div class="icon">
+      <i class="fa fa-university"></i>
+      <span class="resume-heading">Education</span>
+    </div>
 		{{#each resume.education}}
 		<div class="item">
 			<div class="date">
@@ -302,8 +311,11 @@
 	
 	{{#if resume.awards.length}}
 	<section id="awards">
-    <h2>Awards</h2><i class="fa fa-star-o">
-		{{#each resume.awards}}
+    <div class="icon">
+      <i class="fa fa-star-o">
+		  <span class="resume-heading">Awards</span>
+    </div>
+      {{#each resume.awards}}
 		<div class="item">
 			{{#if title}}
 			<div class="title">
@@ -332,8 +344,11 @@
 	
 	{{#if resume.publications.length}}
 	<section id="publications">
-    <h2>Publications</h2><i class="fa fa-file-text-o"></i>
-		{{#each resume.publications}}
+    <div class="icon">
+      <i class="fa fa-file-text-o"></i>
+      <span class="resume-heading">Publications</span>   
+    </div>
+    {{#each resume.publications}}
 		<div class="item">
 			{{#if name}}
 			<div class="name">
@@ -367,8 +382,11 @@
 	
 	{{#if resume.skills.length}}
 	<section id="skills">
-    <h2>Skills</h2><i class="fa fa-pencil-square-o"></i>
-		{{#each resume.skills}}
+    <div class="icon">
+      <i class="fa fa-pencil-square-o"></i>
+		  <span class="resume-heading">Skills</span>
+    </div>
+    {{#each resume.skills}}
 		<div class="item">
 			{{#if name}}
 			<div class="name">
@@ -394,7 +412,10 @@
 
 	{{#if resume.languages.length}}
 	<section id="languages">
-    <h2>Languages</h2><i class="fa fa-langauge"></i>
+    <div class="icon">
+      <i class="fa fa-langauge"></i>
+      <span class="resume-heading">Languages</span>
+    </div>
 		{{#each resume.languages}}
 		<div class="item">
 			{{#if language}}
@@ -414,8 +435,11 @@
 
 	{{#if resume.interests.length}}
   <section id="interests">
-		<h2>Interests</h2><i class="fa fa-at"></i>
-		{{#each resume.interests}}
+    <div class="icon">
+      <i class="fa fa-at"></i>
+		  <span class="resume-heading">Interests</span>
+    </div>
+    {{#each resume.interests}}
 		<div class="item">
 			{{#if name}}
 			<div class="name">
@@ -436,8 +460,11 @@
 	
 	{{#if resume.references.length}}
   <section id="references">
-		<h2>References</h2><i class="fa fa-thumbs-o-up"></i>
-		{{#each resume.references}}
+    <div class="icon">
+		  <i class="fa fa-thumbs-o-up"></i>
+		  <span class="resume-heading">References</span>
+    </div>
+    {{#each resume.references}}
 		<div class="item">
 			{{#if reference}}
 			<blockquote class="reference">
